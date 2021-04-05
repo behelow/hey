@@ -1,0 +1,271 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;700&display=swap");
+
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Montserrat', sans-serif; */
+/* end of font */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, #34e89e, #0f3443);
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  color: #19615a;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #19615a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.98em;
+  color: #19615a;
+}
+
+.m-s {
+  margin: 0.5rem 0rem;
+}
+
+.btn-ls {
+  background: linear-gradient(to right bottom, #34e89e, #0f3443);
+  color: white;
+  padding: 10px 60px 10px 60px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  height: 4rem;
+}
+
+.navbar-brand {
+  padding-bottom: 10px;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #124049;
+  color: #124049;
+  text-decoration: none;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+/* End of Navbar Styles */
+
+/* Container hero */
+.hero-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box */
+.card-box {
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  display: flex;
+}
+/* content-left*/
+
+.content-left {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 20px 0px 0px 20px;
+  box-sizing: border-box;
+}
+
+.mybrand {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+/* end of content-left */
+
+/* login-content */
+
+.login-content {
+  flex: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.login-content p {
+  margin: 5px 0;
+}
+
+.social-link {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.social-link li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 10px 20px;
+  border: 2px solid #19615a;
+  border-radius: 50%;
+}
+
+.social-link li a:hover {
+  color: #124049;
+  border-color: #124049;
+}
+
+/* form */
+.registration {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.registration input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 25px;
+  margin: 8px 0;
+  border-radius: 50px;
+  outline: none;
+}
+
+.registration input::placeholder {
+  font-size: 0.78rem;
+  color: rgba(12, 15, 15, 0.4);
+}
+
+.registration input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #124049;
+  transition: 0.7s ease-in-out;
+}
+
+.btn-form {
+  width: 200px;
+  max-width: 100%;
+}
+
+/* end of form */
+
+/* end of login-content */
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.footer span {
+  color: #19615a;
+  text-align: center;
+}
+.footer a:hover {
+  color: #124049;
+}
+
+/* media query - responsive */
+
+@media (max-width: 1100px) {
+  .hero-container {
+    height: 150vh;
+  }
+  .card-box {
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mybrand {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    display: none;
+  }
+
+  .content-left {
+    border-radius: 20px 20px 0 0;
+    flex: 40%;
+    box-sizing: border-box;
+  }
+
+  .login-content {
+    width: 90%;
+    flex: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-box {
+    width: 80%;
+  }
+  .registration {
+    width: 100%;
+  }
+  .registration input {
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .social-link li a {
+    margin: 10px 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn-ls {
+    font-size: 0.8rem;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
